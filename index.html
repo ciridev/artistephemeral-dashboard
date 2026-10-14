@@ -152,6 +152,38 @@
             color: #555555;
             text-decoration: underline;
         }
+
+        /* Password input group styling */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: #444444;
+            margin-bottom: 6px;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333333;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            background-color: #fafbfc;
+        }
+        
+        .input-group input:focus {
+            border-color: #0070f3;
+            box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
+            background-color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -159,20 +191,26 @@
     <div class="container">
         <div class="card">
             <img src="artist_ephemeral_icon.jpg" alt="ShopSync Logo" style="width: 48px; height: 48px; border-radius: 10px; margin-bottom: 16px;">
-            <h1>ShopSync Analytics</h1>
+            <h1>ArtistEphemeral Inventory & Trend Dashboard</h1>
             <p class="subtitle">Private internal dashboard for Etsy shop management and inventory tracking.</p>
 
             <!-- Pre-selected Single User Profile -->
             <div class="user-profile-box">
-                <div class="avatar">A</div>
+                <img src="free-user-icon-3296-thumb.png" alt="ShopSync Logo" style="width: 48px; height: 48px; border-radius: 10px; margin-bottom: 16px;">
                 <div class="user-info">
                     <div class="user-name">Authorized Shop Administrator</div>
                     <div class="user-role">Single-User Access Only</div>
                 </div>
             </div>
 
+            <!-- Password Input Field -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your access password">
+            </div>
+
             <!-- Login Action Button -->
-            <button class="btn-submit" onclick="alert('Redirecting to private session dashboard...')">
+            <button class="btn-submit" onclick="alert('Password is incorrect. Please input correct password.')">
                 Continue to Dashboard
             </button>
 
@@ -184,7 +222,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 ShopSync Analytics. Internal Tool | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2026 CIRI Analytics. Internal Tool | <a href="#">Privacy Policy</a></p>
     </footer>
 
 </body>
